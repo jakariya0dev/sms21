@@ -21,6 +21,7 @@ Route::get('/hero-data',  [SiteController::class, 'getHeroData'])->name('hero');
 Route::get('/notice-data',  [SiteController::class, 'getNoticeData'])->name('notice');
 Route::get('/photo-gallery-data',  [SiteController::class, 'getPhotoGalleryData'])->name('photo.gallery');
 Route::get('/contact-data',  [SiteController::class, 'getContactData'])->name('contact');
+Route::get('/news-event-data',  [SiteController::class, 'getNewsEventData'])->name('contact');
 
 
 

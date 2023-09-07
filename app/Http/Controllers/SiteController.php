@@ -17,7 +17,7 @@ class SiteController extends Controller
     }
 
     function getAdministrationData(){
-        return DB::table('administration')->get();
+        return DB::table('administration')->get()->first();
     }
 
     function getCounterData(){
@@ -42,6 +42,10 @@ class SiteController extends Controller
 
     function getContactData(){
         return DB::table('contact')->get()->first();
+    }
+
+    function getNewsEventData(){
+        return DB::table('news_event')->get();
     }
 
 }

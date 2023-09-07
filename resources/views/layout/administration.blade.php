@@ -13,12 +13,12 @@
                 <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
                     <div class="card-body p-4">
                         <div class="member-profile position-absolute w-100 text-center">
-                            <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="">
+                            <img id="admin-img-1" class="rounded-circle mx-auto d-inline-block shadow-sm" src="" alt="">
                         </div>
                         <div class="card-text pt-1">
-                            <h5 class="member-name mb-0 text-center text-primary font-weight-bold">মোঃ আক্কাস আলী</h5>
-                            <div class="mb-3 text-center">সভাপতি</div>
-                            <p>আমি অত্র প্রতিষ্ঠানের সাফল্য ও মান সম্পন্ন শিক্ষা নিশ্চিত করণে সরকারের পাশাপাশি জনাব মোঃ শাহরিয়ার আলম এমপি, মাননীয় পররাষ্ট্র প্রতিমন্ত্রী মহোদয়ের উন্নয়নের অগ্রযাত্রার ধারাবাহিকতায় আপামর জনসাধারণের সার্বিক সাহায্য ও সহযোগিতা কামনা করছি। এ কলেজের উত্তরোত্তর শ্রীবৃদ্ধি ঘটুক, মহান আল্লাহ্’র কাছে এই কামনা করছি।</p>
+                            <h5 id="admin-name-1" class="member-name mb-0 text-center text-primary font-weight-bold"></h5>
+                            <div id="admin-designation-1" class="mb-3 text-center"></div>
+                            <p id="admin-message-1" style="max-height: 150px; overflow: hidden; text-overflow: ellipsis"></p>
                         </div>
                     </div><!--//card-body-->
                     <div class="card-footer theme-bg-primary border-0 text-center">
@@ -30,12 +30,12 @@
                 <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
                     <div class="card-body p-4">
                         <div class="member-profile position-absolute w-100 text-center">
-                            <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
+                            <img id="admin-img-2" class="rounded-circle mx-auto d-inline-block shadow-sm" src="" alt="">
                         </div>
                         <div class="card-text pt-1">
-                            <h5 class="member-name mb-0 text-center text-primary font-weight-bold">মোঃ নাজমুল হোসেন</h5>
-                            <div class="mb-3 text-center">প্রধান শিক্ষক</div>
-                            <p>আমি অত্র প্রতিষ্ঠানের সাফল্য ও মান সম্পন্ন শিক্ষা নিশ্চিত করণে সরকারের পাশাপাশি জনাব মোঃ শাহরিয়ার আলম এমপি, মাননীয় পররাষ্ট্র প্রতিমন্ত্রী মহোদয়ের উন্নয়নের অগ্রযাত্রার ধারাবাহিকতায় আপামর জনসাধারণের সার্বিক সাহায্য ও সহযোগিতা কামনা করছি। এ কলেজের উত্তরোত্তর শ্রীবৃদ্ধি ঘটুক, মহান আল্লাহ্’র কাছে এই কামনা করছি।</p>
+                            <h5 id="admin-name-2" class="member-name mb-0 text-center text-primary font-weight-bold"></h5>
+                            <div id="admin-designation-2" class="mb-3 text-center"></div>
+                            <p id="admin-message-2" style="max-height: 150px; overflow: hidden; text-overflow: ellipsis"></p>
                         </div>
                     </div><!--//card-body-->
                     <div class="card-footer theme-bg-primary border-0 text-center">
@@ -47,12 +47,12 @@
                 <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
                     <div class="card-body p-4">
                         <div class="member-profile position-absolute w-100 text-center">
-                            <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+                            <img id="admin-img-3" class="rounded-circle mx-auto d-inline-block shadow-sm" src="" alt="">
                         </div>
                         <div class="card-text pt-1">
-                            <h5 class="member-name mb-0 text-center text-primary font-weight-bold">মোঃ সেলিম সরকার</h5>
-                            <div class="mb-3 text-center">সহঃ প্রধান শিক্ষক</div>
-                            <p>আমি অত্র প্রতিষ্ঠানের সাফল্য ও মান সম্পন্ন শিক্ষা নিশ্চিত করণে সরকারের পাশাপাশি জনাব মোঃ শাহরিয়ার আলম এমপি, মাননীয় পররাষ্ট্র প্রতিমন্ত্রী মহোদয়ের উন্নয়নের অগ্রযাত্রার ধারাবাহিকতায় আপামর জনসাধারণের সার্বিক সাহায্য ও সহযোগিতা কামনা করছি। এ কলেজের উত্তরোত্তর শ্রীবৃদ্ধি ঘটুক, মহান আল্লাহ্’র কাছে এই কামনা করছি।</p>
+                            <h5 id="admin-name-3" class="member-name mb-0 text-center text-primary font-weight-bold"></h5>
+                            <div id="admin-designation-3" class="mb-3 text-center"></div>
+                            <p id="admin-message-3" style="max-height: 150px; overflow: hidden; text-overflow: clip"></p>
                         </div>
                     </div><!--//card-body-->
                     <div class="card-footer theme-bg-primary border-0 text-center">
@@ -65,3 +65,35 @@
     </div>
 
 </section>
+
+
+<script>
+
+    getData()
+
+    async function getData() {
+
+        let url = '/administration-data';
+
+        const response = await axios.get(url);
+
+        document.getElementById('admin-img-1').src = `{{ asset('images/admin/${response.data.president_image}') }}`;
+        document.getElementById('admin-name-1').innerHTML = response.data.president_name;
+        document.getElementById('admin-designation-1').innerHTML = response.data.president_designation;
+        document.getElementById('admin-message-1').innerHTML = response.data.president_message;
+
+        document.getElementById('admin-img-2').src = `{{ asset('images/admin/${response.data.principal_image}') }}`;
+        document.getElementById('admin-name-2').innerHTML = response.data.principal_name;
+        document.getElementById('admin-designation-2').innerHTML = response.data.principal_designation;
+        document.getElementById('admin-message-2').innerHTML = response.data.principal_message;
+
+        document.getElementById('admin-img-3').src = `{{ asset('images/admin/${response.data.vice_principal_image}') }}`;
+        document.getElementById('admin-name-3').innerHTML = response.data.vice_principal_name;
+        document.getElementById('admin-designation-3').innerHTML = response.data.vice_principal_designation;
+        document.getElementById('admin-message-3').innerHTML = response.data.vice_principal_message;
+
+        console.log(response.data)
+
+
+    }
+</script>

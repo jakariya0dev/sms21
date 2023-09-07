@@ -16,10 +16,10 @@
     <div class="container">
         <div class="img-overlay">
             <div class="logo">
-                <img src="{{ asset('assets/img/course-1.jpg') }}" alt="" class="img-fluid logo-img" >
+                <img id="main-logo" alt="" class="img-fluid logo-img"  src="">
             </div>
-            <h1 id="school-title">পুরানবাজার ডিগ্রি কলেজ</h1>
-            <h3 id="school-subtitle">বাংলাদেশ মিলিটারি একাডেমি, ভাটিয়ারি, ৪৩১৫ চট্টগ্রাম, চট্টগ্রাম বিভাগ, বাংলাদেশ</h3>
+            <h1 id="school-name"></h1>
+            <h5 id="school-year"></h5>
         </div>
     </div>
 </section>
@@ -32,8 +32,9 @@
         let url = '/hero-data';
         const response = await axios.get(url);
 
-        document.getElementById('school-title').innerText = response.data.title;
-        document.getElementById('school-subtitle').innerText = response.data['subtitle'];
+        document.getElementById('school-name').innerText = response.data.name;
+        document.getElementById('school-year').innerText = response.data['year'];
+        document.getElementById('main-logo').src = `{{ asset('images/logo/${response.data.logo}') }}`;
         // console.log(response.data);
     }
 </script>

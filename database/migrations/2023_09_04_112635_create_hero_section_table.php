@@ -13,10 +13,9 @@ return new class extends Migration
     {
         Schema::create('hero_section', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('subtitle');
-            $table->string('button1');
-            $table->string('button2');
+            $table->string('name');
+            $table->string('year');
+            $table->string('logo');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate() ;
         });

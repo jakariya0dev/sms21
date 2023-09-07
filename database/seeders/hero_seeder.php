@@ -14,10 +14,9 @@ class hero_seeder extends Seeder
     public function run(): void
     {
         DB::table('hero_section')->insert([
-            'title' => 'বদরগঞ্জ সরকারি কলেজ',
-            'subtitle' => 'Badarganj Goverment Collge',
-            'button1' => 'Badarganj Goverment Collge',
-            'button2' => 'Badarganj Goverment Collge',
+            'name' => 'বদরগঞ্জ সরকারি কলেজ',
+            'year' => 'স্থাপিত: ১৯৯০ সাল',
+            'logo' => 'image1.jpg',
         ]);
     }
 }

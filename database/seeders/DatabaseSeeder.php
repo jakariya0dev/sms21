@@ -22,6 +22,9 @@ class DatabaseSeeder extends Seeder
             hero_seeder::class,
             notice_seeder::class,
             contact_seeder::class,
+            feature_seeder::class,
+            news_event_seeder::class,
+            photo_gallery_seeder::class
         ]);
     }
 }

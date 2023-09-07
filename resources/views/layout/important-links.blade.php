@@ -15,14 +15,9 @@
                                 </g>
                             </svg>
                         </div>
-                        <h4>জরুরী সেবা</h4>
-                        <div style="text-align: left">
-                            <i class="bi bi-caret-right-fill"></i> <span> <a href="https://muktopaath.gov.bd/" target="_blank">মুক্তপাঠ</a></span> <br>
-                            <i class="bi bi-caret-right-fill"></i> <span> <a href="https://teachers.gov.bd/" target="_blank">শিক্ষক বাতায়ন</a></span> <br>
-                            <i class="bi bi-caret-right-fill"></i> <span> <a href="https://dshe.gov.bd/" target="_blank">মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর</a></span> <br>
-                            <i class="bi bi-caret-right-fill"></i> <span> <a href="https://tmed.gov.bd/" target="_blank">কারিগরি ও মাদ্রাসা শিক্ষা বিভাগ</a></span> <br>
-                            <i class="bi bi-caret-right-fill"></i> <span> <a href="https://dinajpureducationboard.gov.bd/" target="_blank">শিক্ষা বোর্ড, দিনাজপুর</a></span> <br>
-                            <i class="bi bi-caret-right-fill"></i> <span> <a href="https://moedu.gov.bd/" target="_blank">শশিক্ষা মন্ত্রণালয়</a></span> <br>
+                        <h4>নিউজ এন্ড ইভেন্ট</h4>
+                        <div id="news-event-board" style="text-align: left">
+
                         </div>
                     </div>
                 </div>
@@ -39,7 +34,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <h4>জরুরী সেবা</h4>
+                        <h4>প্রয়োজনীয় ওয়েবসাইট</h4>
                         <div style="text-align: left">
                             <i class="bi bi-caret-right-fill"></i> <span> <a href="https://muktopaath.gov.bd/" target="_blank">মুক্তপাঠ</a></span> <br>
                             <i class="bi bi-caret-right-fill"></i> <span> <a href="https://teachers.gov.bd/" target="_blank">শিক্ষক বাতায়ন</a></span> <br>
@@ -78,3 +73,28 @@
         </div>
     </div>
 </section>
+
+<script>
+
+    getData()
+
+    async function getData() {
+
+        let url = '/news-event-data';
+
+        const response = await axios.get(url);
+
+        response.data.forEach((item) => {
+            document.getElementById('news-event-board').innerHTML += `
+                    <i class="bi bi-caret-right-fill"></i>
+                    <span>
+                        <a href="#" target="_blank"> ${item.title}</a>
+                    </span> <br>
+        `;
+
+        });
+
+        // console.log(response.data)
+
+    }
+</script>
