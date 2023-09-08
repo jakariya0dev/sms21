@@ -77,20 +77,20 @@
 
         const response = await axios.get(url);
 
-        document.getElementById('admin-img-1').src = `{{ asset('images/admin/${response.data.president_image}') }}`;
-        document.getElementById('admin-name-1').innerHTML = response.data.president_name;
-        document.getElementById('admin-designation-1').innerHTML = response.data.president_designation;
-        document.getElementById('admin-message-1').innerHTML = response.data.president_message;
+        document.getElementById('admin-img-1').src = `{{ asset('images/admin/${response.data[0].image}') }}`;
+        document.getElementById('admin-name-1').innerHTML = response.data[0].name;
+        document.getElementById('admin-designation-1').innerHTML = response.data[0].designation;
+        document.getElementById('admin-message-1').innerHTML = response.data[0].message;
 
-        document.getElementById('admin-img-2').src = `{{ asset('images/admin/${response.data.principal_image}') }}`;
-        document.getElementById('admin-name-2').innerHTML = response.data.principal_name;
-        document.getElementById('admin-designation-2').innerHTML = response.data.principal_designation;
-        document.getElementById('admin-message-2').innerHTML = response.data.principal_message;
+        document.getElementById('admin-img-2').src = `{{ asset('images/admin/${response.data[1].image}') }}`;
+        document.getElementById('admin-name-2').innerHTML = response.data[1].name;
+        document.getElementById('admin-designation-2').innerHTML = response.data[1].designation;
+        document.getElementById('admin-message-2').innerHTML = response.data[1].message;
 
-        document.getElementById('admin-img-3').src = `{{ asset('images/admin/${response.data.vice_principal_image}') }}`;
-        document.getElementById('admin-name-3').innerHTML = response.data.vice_principal_name;
-        document.getElementById('admin-designation-3').innerHTML = response.data.vice_principal_designation;
-        document.getElementById('admin-message-3').innerHTML = response.data.vice_principal_message;
+        document.getElementById('admin-img-3').src = `{{ asset('images/admin/${response.data[2].image}') }}`;
+        document.getElementById('admin-name-3').innerHTML = response.data[2].name;
+        document.getElementById('admin-designation-3').innerHTML = response.data[2].designation;
+        document.getElementById('admin-message-3').innerHTML = response.data[2].message;
 
         console.log(response.data)
 

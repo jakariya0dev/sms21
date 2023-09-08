@@ -3,8 +3,8 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>College introduction</h2>
-                <p>এক নজরে কলেজ পরিচিতি</p>
+                <h2>Introduction</h2>
+                <p id="about-title"></p>
             </div>
 
             <div class="row">
@@ -32,6 +32,7 @@
         const response = await axios.get(url);
 
         document.getElementById('y-video').src = response.data.video_url;
+        document.getElementById('about-title').innerHTML = response.data.title;
         document.getElementById('about-para').innerText = response.data.description;
         document.getElementById('about-image').src = `{{ asset('images/about/${response.data.image}') }}`;
 

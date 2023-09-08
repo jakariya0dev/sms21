@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('about', function (Blueprint $table) {
             $table->id();
-            $table->string('video_url');
+            $table->string('title');
             $table->text('description');
             $table->string('image');
+            $table->string('video_url');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate() ;
         });

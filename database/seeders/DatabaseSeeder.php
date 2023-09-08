@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
             banner_seeder::class,
             notice_seeder::class,
             contact_seeder::class,
-            feature_seeder::class,
+            AcademicInfoSeeder::class,
             news_event_seeder::class,
             photo_gallery_seeder::class
         ]);

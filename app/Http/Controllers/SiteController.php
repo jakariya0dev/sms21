@@ -17,15 +17,15 @@ class SiteController extends Controller
     }
 
     function getAdministrationData(){
-        return DB::table('administration')->get()->first();
+        return DB::table('administration')->get();
     }
 
     function getCounterData(){
         return DB::table('counter')->get()->first();
     }
 
-    function getFeatureData(){
-        return DB::table('feature')->get()->first();
+    function getAcademicData(){
+        return DB::table('academic_info')->get()->first();
     }
 
     function getBannerData(){

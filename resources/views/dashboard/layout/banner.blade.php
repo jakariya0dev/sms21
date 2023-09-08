@@ -20,27 +20,26 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="banner-title">প্রতিষ্ঠানের নামঃ</label>
-                            <input name="banner-title" type="text" class="form-control" id="banner-title" placeholder="Ex: বদরগঞ্জ সরকারি কলেজ">
+                            <input name="banner-title" type="text" class="form-control" id="banner-title" placeholder="Ex: বদরগঞ্জ সরকারি কলেজ" required>
                         </div>
                         <div class="form-group">
                             <label for="banner-subtitle">সাব টাইটেল</label>
-                            <input name="banner-subtitle" type="text" class="form-control" id="banner-subtitle" placeholder="Ex: স্থাপিত: ১৯৯০ সাল">
+                            <input name="banner-subtitle" type="text" class="form-control" id="banner-subtitle" placeholder="Ex: স্থাপিত: ১৯৯০ সাল" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputFile">লোগো (520 x 520)</label>
+                            <label for="banner-logo">লোগো (520 x 520)</label>
                             <div class="input-group">
                                 <div class="custom-file">
-                                    <input name="banner-logo" type="file" class="custom-file-input" id="banner-logo">
-                                    <label class="custom-file-label" for="banner-logo">Choose file</label>
+                                    <input name="banner-logo" type="file" class="form-control" id="banner-logo">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputFile">ব্যানার (600 x 160)</label>
+                            <label for="banner-bg">ব্যানার (600 x 160)</label>
+
                             <div class="input-group">
                                 <div class="custom-file">
-                                    <input name="banner-bg" type="file" class="custom-file-input" id="banner-bg">
-                                    <label class="custom-file-label" for="banner-bg">Choose file</label>
+                                    <input name="banner-bg" type="file" class="form-control" id="banner-bg">
                                 </div>
                             </div>
                         </div>

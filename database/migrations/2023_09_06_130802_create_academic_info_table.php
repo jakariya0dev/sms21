@@ -13,18 +13,18 @@ return new class extends Migration
     {
         Schema::create('academic_info', function (Blueprint $table) {
             $table->id();
-            $table->string('ai_1');
-            $table->string('ai_2');
-            $table->string('ai_3');
-            $table->string('ai_4');
-            $table->string('ai_5');
-            $table->string('ai_6');
-            $table->string('ai_7');
-            $table->string('ai_8');
-            $table->string('ai_9');
-            $table->string('ai_10');
-            $table->string('ai_11');
-            $table->string('ai_12');
+            $table->string('info_1');
+            $table->string('info_2');
+            $table->string('info_3');
+            $table->string('info_4');
+            $table->string('info_5');
+            $table->string('info_6');
+            $table->string('info_7');
+            $table->string('info_8');
+            $table->string('info_9');
+            $table->string('info_10');
+            $table->string('info_11');
+            $table->string('info_12');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate() ;
         });

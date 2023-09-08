@@ -6,14 +6,14 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class feature_seeder extends Seeder
+class AcademicInfoSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('feature')->insert([
+        DB::table('academic_info')->insert([
             'info_1' => 'ইআইআই নম্বরঃ ১২৩৪৫৬',
             'info_2' => 'কলেজ কোডঃ ১২৩৪৫৬',
             'info_3' => 'মোট শিক্ষার্থীঃ ১০০ জন',

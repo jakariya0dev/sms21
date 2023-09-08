@@ -31,7 +31,7 @@
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <div class="course-item">
-                        <img src="{{ asset('images/achieve/${item.image}') }}" class="img-fluid" alt="...">
+                        <img src="{{ asset('images/achieve/${item.image}') }}" class="img-fluid w-100" alt="...">
                         <div class="course-content">
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <h4>${item.created_at}</h4>

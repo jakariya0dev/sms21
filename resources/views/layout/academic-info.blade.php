@@ -89,7 +89,7 @@
 
     async function getData() {
 
-        let url = '/feature-data';
+        let url = '/academic-data';
 
         const response = await axios.get(url);
 
