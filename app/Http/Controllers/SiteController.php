@@ -28,8 +28,8 @@ class SiteController extends Controller
         return DB::table('feature')->get()->first();
     }
 
-    function getHeroData(){
-        return DB::table('hero_section')->get()->first();
+    function getBannerData(){
+        return DB::table('banner')->get()->first();
     }
 
     function getNoticeData(){

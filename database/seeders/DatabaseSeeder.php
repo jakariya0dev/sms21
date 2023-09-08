@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             achievement_seeder::class,
             administration_seeder::class,
             counter_seeder::class,
-            hero_seeder::class,
+            banner_seeder::class,
             notice_seeder::class,
             contact_seeder::class,
             feature_seeder::class,

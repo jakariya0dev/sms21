@@ -419,7 +419,6 @@ h6 {
 #banner .container{
     width: 100%;
     background-size: cover;
-    background-image: url("../img/hero-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     padding: 0;
