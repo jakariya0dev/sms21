@@ -1,9 +1,22 @@
-@extends('dashboard.dash')
+@extends('dashboard.master')
 
 @section('content')
 
     <section>
-        <h1>ব্যানার</h1>
+        <!-- Brand Logo -->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">Dashboard v2</h1>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
 
         <!-- general form elements -->
         <div class="container">
@@ -20,11 +33,13 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="banner-title">প্রতিষ্ঠানের নামঃ</label>
-                            <input name="banner-title" type="text" class="form-control" id="banner-title" placeholder="Ex: বদরগঞ্জ সরকারি কলেজ" required>
+                            <input name="banner-title" type="text" class="form-control" id="banner-title"
+                                   placeholder="Ex: বদরগঞ্জ সরকারি কলেজ" required>
                         </div>
                         <div class="form-group">
                             <label for="banner-subtitle">সাব টাইটেল</label>
-                            <input name="banner-subtitle" type="text" class="form-control" id="banner-subtitle" placeholder="Ex: স্থাপিত: ১৯৯০ সাল" required>
+                            <input name="banner-subtitle" type="text" class="form-control" id="banner-subtitle"
+                                   placeholder="Ex: স্থাপিত: ১৯৯০ সাল" required>
                         </div>
                         <div class="form-group">
                             <label for="banner-logo">লোগো (520 x 520)</label>
@@ -58,7 +73,7 @@
 
         getBannerData()
 
-        async function getBannerData(){
+        async function getBannerData() {
             let url = '/banner-data';
             const response = await axios.get(url);
             document.getElementById('banner-title').value = response.data.title;

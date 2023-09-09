@@ -34,7 +34,7 @@ class SiteController extends Controller
     }
 
     function getNoticeData(){
-        return DB::table('notice')->orderBy('id', 'desc')->get();
+        return DB::table('notice')->orderBy('id', 'desc')->take(3)->get();
     }
 
     function getPhotoGalleryData(){

@@ -1,4 +1,4 @@
-@extends('page')
+@extends('master-page')
 
 @section('content')
     <!-- ======= Why Us Section ======= -->
@@ -19,8 +19,17 @@
                                 <th scope="col">Title</th>
                                 <th scope="col">Action</th>
                             </tr>
+
                             </thead>
                             <tbody id="notice-tile">
+                            @foreach($data as $item)
+
+                                <tr>
+                                    <th scope="row">{{$item->id}}</th>
+                                    <td>{{ $item->title }}</td>
+                                    <td><a href="{{ url('/download-notice/'.$item->id) }}">Download</a></td>
+                                </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -30,7 +39,7 @@
 
         <script>
 
-            getData()
+            // getData()
 
             async function getData() {
 

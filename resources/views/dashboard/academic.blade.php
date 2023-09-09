@@ -1,4 +1,4 @@
-@extends('dashboard.dash')
+@extends('dashboard.master')
 
 @section('content')
 
@@ -12,7 +12,8 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/teachers-update') }}" method="post">
+                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/teachers-update') }}"
+                      method="post">
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
@@ -40,7 +41,8 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/routine-update') }}" method="post">
+                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/routine-update') }}"
+                      method="post">
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
@@ -68,7 +70,8 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/syllabus-update') }}" method="post">
+                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/syllabus-update') }}"
+                      method="post">
                     @csrf
                     <div class="card-body">
                         <div class="form-group">

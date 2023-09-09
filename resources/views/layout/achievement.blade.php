@@ -1,5 +1,5 @@
 <!-- ======= Achievement Courses Section ======= -->
-<section id="popular-courses" class="courses">
+<section id="achievement" class="courses">
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">

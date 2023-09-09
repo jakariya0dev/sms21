@@ -1,4 +1,4 @@
-@extends('page')
+@extends('master-page')
 
 @section('content')
     <!-- ======= Why Us Section ======= -->
@@ -14,7 +14,8 @@
                     <div class="container">
                         <div class="row justify-content-center mx-auto">
                             <iframe src="{{ asset('files/notice/1694244415.pdf') }}" width="100%" height="1000">
-                                This browser does not support PDFs. Please download the PDF to view it: <a href="{{ asset('folder/file_name.pdf') }}">Download PDF</a>
+                                This browser does not support PDFs. Please download the PDF to view it: <a
+                                        href="{{ asset('folder/file_name.pdf') }}">Download PDF</a>
                             </iframe>
                         </div>
                     </div>

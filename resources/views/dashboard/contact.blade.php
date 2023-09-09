@@ -1,4 +1,4 @@
-@extends('dashboard.dash')
+@extends('dashboard.master')
 
 @section('content')
 
@@ -12,18 +12,20 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/contact-update') }}" method="post">
+                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/contact-update') }}"
+                      method="post">
 
                     @csrf
                     @method('put')
                     <div class="card-body">
                         <div class="form-group">
                             <label for="contact-address">ঠিকানা:</label>
-                            <input name="contact-address" type="text" class="form-control" id="contact-address" required>
+                            <input name="contact-address" type="text" class="form-control" id="contact-address"
+                                   required>
                         </div>
                         <div class="form-group">
                             <label for="contact-email">ইমেইল:</label>
-                            <input name="contact-email" type="text" class="form-control" id="contact-email"  required>
+                            <input name="contact-email" type="text" class="form-control" id="contact-email" required>
                         </div>
                         <div class="form-group">
                             <label for="contact-cell">মোবাইল নাম্বার:</label>
@@ -31,27 +33,32 @@
                         </div>
                         <div class="form-group">
                             <label for="contact-maps">গুগল ম্যাপের অ্যাড্রেস ():</label>
-                            <input name="contact-maps" type="text" class="form-control" id="contact-maps"  required>
+                            <input name="contact-maps" type="text" class="form-control" id="contact-maps" required>
                         </div>
                         <div class="form-group">
                             <label for="contact-twitter">টুইটার লিংক:</label>
-                            <input name="contact-twitter" type="text" class="form-control" id="contact-twitter" required>
+                            <input name="contact-twitter" type="text" class="form-control" id="contact-twitter"
+                                   required>
                         </div>
                         <div class="form-group">
                             <label for="contact-facebook">ফেইসবুক লিংক:</label>
-                            <input name="contact-facebook" type="text" class="form-control" id="contact-facebook"  required>
+                            <input name="contact-facebook" type="text" class="form-control" id="contact-facebook"
+                                   required>
                         </div>
                         <div class="form-group">
                             <label for="contact-instagram">ইন্সটাগ্রাম লিংক:</label>
-                            <input name="contact-instagram" type="text" class="form-control" id="contact-instagram" required>
+                            <input name="contact-instagram" type="text" class="form-control" id="contact-instagram"
+                                   required>
                         </div>
                         <div class="form-group">
                             <label for="contact-youtube">ইউটিউব লিংক:</label>
-                            <input name="contact-youtube" type="text" class="form-control" id="contact-youtube"  required>
+                            <input name="contact-youtube" type="text" class="form-control" id="contact-youtube"
+                                   required>
                         </div>
                         <div class="form-group">
                             <label for="contact-linkedin">লিংকডইন লিংক:</label>
-                            <input name="contact-linkedin" type="text" class="form-control" id="contact-linkedin" required>
+                            <input name="contact-linkedin" type="text" class="form-control" id="contact-linkedin"
+                                   required>
                         </div>
                     </div>
                     <!-- /.card-body -->
@@ -68,7 +75,7 @@
 
         getContactData()
 
-        async function getContactData(){
+        async function getContactData() {
             let url = '/contact-data';
             const response = await axios.get(url);
             document.getElementById('contact-address').value = response.data.address;

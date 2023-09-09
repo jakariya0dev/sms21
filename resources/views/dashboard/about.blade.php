@@ -1,4 +1,4 @@
-@extends('dashboard.dash')
+@extends('dashboard.master')
 
 @section('content')
 
@@ -19,11 +19,13 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="about-title">হেডলাইনঃ</label>
-                            <input name="about-title" type="text" class="form-control" id="about-title" placeholder="Ex: এক নজরে কলেজ  পরিচিতি" required>
+                            <input name="about-title" type="text" class="form-control" id="about-title"
+                                   placeholder="Ex: এক নজরে কলেজ  পরিচিতি" required>
                         </div>
                         <div class="form-group">
                             <label for="about-description">বর্ণনাঃ</label>
-                            <input height="50" name="about-description" type="text" class="form-control" id="about-description" placeholder="" required>
+                            <input height="50" name="about-description" type="text" class="form-control"
+                                   id="about-description" placeholder="" required>
                         </div>
                         <div class="form-group">
                             <label for="about-img">ইমেজঃ (520 x 520)</label>
@@ -35,7 +37,8 @@
                         </div>
                         <div class="form-group">
                             <label for="video-url">ভিডিও লিংকঃ</label>
-                            <input name="video-url" type="text" class="form-control" id="video-url" placeholder="Ex: https://www.youtube.com" required>
+                            <input name="video-url" type="text" class="form-control" id="video-url"
+                                   placeholder="Ex: https://www.youtube.com" required>
                         </div>
 
                     </div>
@@ -53,7 +56,7 @@
 
         getBannerData()
 
-        async function getBannerData(){
+        async function getBannerData() {
             let url = '/about-data';
             const response = await axios.get(url);
             document.getElementById('about-title').value = response.data.title;

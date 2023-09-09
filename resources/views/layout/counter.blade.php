@@ -1,5 +1,5 @@
 <!-- ======= Counts Section ======= -->
-<section id="counts" class="counts section-bg">
+<section id="counter" class="counts section-bg">
         <div class="container">
 
             <div class="row counters">

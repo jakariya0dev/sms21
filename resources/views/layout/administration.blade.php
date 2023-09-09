@@ -1,6 +1,6 @@
 <!-- ======= Administration Section ======= -->
 
-<section class="team-section py-5">
+<section id="administration" class="team-section py-5">
     <div class="container">
 
         <div class="section-title">

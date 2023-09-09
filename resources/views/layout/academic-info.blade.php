@@ -1,5 +1,5 @@
 <!-- ======= Features Section ======= -->
-<section id="features" class="features">
+<section id="academic-info" class="features">
         <div class="container mt-5" data-aos="fade-up">
             <div class="section-title">
                 <h2>Academic information</h2>

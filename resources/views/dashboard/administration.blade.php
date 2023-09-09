@@ -1,4 +1,4 @@
-@extends('dashboard.dash')
+@extends('dashboard.master')
 
 @section('content')
 
@@ -12,7 +12,8 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/administration-update', 1) }}" method="post">
+                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/administration-update', 1) }}"
+                      method="post">
                     @csrf
                     @method('put')
                     <div class="card-body">
@@ -22,7 +23,8 @@
                         </div>
                         <div class="form-group">
                             <label for="designation-1">পদবীঃ</label>
-                            <input name="designation-1" type="text" class="form-control" id="designation-1" placeholder="সভাপতি" required>
+                            <input name="designation-1" type="text" class="form-control" id="designation-1"
+                                   placeholder="সভাপতি" required>
                         </div>
                         <div class="form-group">
                             <label for="message-1">বাণীঃ</label>
@@ -53,7 +55,7 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form enctype="multipart/form-data"  action="{{ url('/administration-update', 2) }}" method="post">
+                <form enctype="multipart/form-data" action="{{ url('/administration-update', 2) }}" method="post">
                     @csrf
                     @method('put')
                     <div class="card-body">
@@ -63,7 +65,8 @@
                         </div>
                         <div class="form-group">
                             <label for="designation-2">পদবীঃ</label>
-                            <input name="designation-2" type="text" class="form-control" id="designation-2" placeholder="সভাপতি" required>
+                            <input name="designation-2" type="text" class="form-control" id="designation-2"
+                                   placeholder="সভাপতি" required>
                         </div>
                         <div class="form-group">
                             <label for="message-2">বাণীঃ</label>
@@ -94,7 +97,8 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form enctype="multipart/form-data" id="banner-form2" action="{{ url('/administration-update', 3) }}" method="post">
+                <form enctype="multipart/form-data" id="banner-form2" action="{{ url('/administration-update', 3) }}"
+                      method="post">
 
                     @csrf
                     @method('put')
@@ -105,7 +109,8 @@
                         </div>
                         <div class="form-group">
                             <label for="designation-3">পদবীঃ</label>
-                            <input name="designation-3" type="text" class="form-control" id="designation-3" placeholder="সভাপতি" required>
+                            <input name="designation-3" type="text" class="form-control" id="designation-3"
+                                   placeholder="সভাপতি" required>
                         </div>
                         <div class="form-group">
                             <label for="message-3">বাণীঃ</label>
@@ -134,7 +139,7 @@
 
         getAdministrationData()
 
-        async function getAdministrationData(){
+        async function getAdministrationData() {
 
             let url = '/administration-data';
             const response = await axios.get(url);

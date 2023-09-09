@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\File;
 class NoticeController extends Controller
 {
 
+    function allNoticePage(){
+        $data = DB::table('notice')->orderBy('id', 'desc')->take(3)->get();
+        return view('pages.all-notice', ['data' => $data]);
+    }
+
     function deleteNotice(Request $request){
 
         $fileName =  DB::table('notice')->where('id', $request->id)->value('file');

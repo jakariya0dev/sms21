@@ -1,6 +1,5 @@
 <!-- ======= Footer ======= -->
 <footer id="footer">
-
     <div class="footer-top">
         <div class="container">
             <div class="row">
@@ -44,10 +43,10 @@
 
         <div class="me-md-auto text-center text-md-start">
             <div class="copyright">
-                &copy; Copyright <strong><span>Mentor</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>SMS21</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="https://fb.com/al.hadi.bdg">Zakaria Hossain</a>
             </div>
         </div>
         <div class="social-links text-center text-md-right pt-3 pt-md-0">

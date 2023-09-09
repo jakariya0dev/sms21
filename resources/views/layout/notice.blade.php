@@ -36,15 +36,15 @@
             document.getElementById('notice-board').innerHTML += `
                     <tr>
                         <td>
-                            <h5>${item.title}</h5>
-                            <p style="color: #807f7f; font-size: 12px">প্রকাশিতঃ ${item.created_at}</p>
+                            <a href="{{ route('notice.all') }}">
+                                <h5>${item.title}</h5>
+                                <p style="color: #807f7f; font-size: 12px; margin-bottom: 0">প্রকাশিতঃ ${item.created_at}</p>
+                            </a>
                         </td>
                     </tr>
         `;
 
         });
-
-        // console.log(response.data)
 
     }
 </script>

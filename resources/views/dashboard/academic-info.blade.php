@@ -1,4 +1,4 @@
-@extends('dashboard.dash')
+@extends('dashboard.master')
 
 @section('content')
 
@@ -12,7 +12,8 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/academic-info-update') }}" method="post">
+                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/academic-info-update') }}"
+                      method="post">
 
                     @csrf
                     @method('put')
@@ -23,7 +24,7 @@
                         </div>
                         <div class="form-group">
                             <label for="info-2">তথ্য- ২:</label>
-                            <input name="info-2" type="text" class="form-control" id="info-2"  required>
+                            <input name="info-2" type="text" class="form-control" id="info-2" required>
                         </div>
                         <div class="form-group">
                             <label for="info-3">তথ্য- ৩:</label>
@@ -31,7 +32,7 @@
                         </div>
                         <div class="form-group">
                             <label for="info-4">তথ্য- ৪:</label>
-                            <input name="info-4" type="text" class="form-control" id="info-4"  required>
+                            <input name="info-4" type="text" class="form-control" id="info-4" required>
                         </div>
                         <div class="form-group">
                             <label for="info-5">তথ্য- ৫:</label>
@@ -39,7 +40,7 @@
                         </div>
                         <div class="form-group">
                             <label for="info-6">তথ্য- ৬:</label>
-                            <input name="info-6" type="text" class="form-control" id="info-6"  required>
+                            <input name="info-6" type="text" class="form-control" id="info-6" required>
                         </div>
                         <div class="form-group">
                             <label for="info7-">তথ্য- ৭:</label>
@@ -47,7 +48,7 @@
                         </div>
                         <div class="form-group">
                             <label for="info-8">তথ্য- ৮:</label>
-                            <input name="info-8" type="text" class="form-control" id="info-8"  required>
+                            <input name="info-8" type="text" class="form-control" id="info-8" required>
                         </div>
                         <div class="form-group">
                             <label for="info-9">তথ্য- ৯:</label>
@@ -55,7 +56,7 @@
                         </div>
                         <div class="form-group">
                             <label for="info-10">তথ্য- ১০:</label>
-                            <input name="info-10" type="text" class="form-control" id="info-10"  required>
+                            <input name="info-10" type="text" class="form-control" id="info-10" required>
                         </div>
                         <div class="form-group">
                             <label for="info-11">তথ্য- ১১:</label>
@@ -63,7 +64,7 @@
                         </div>
                         <div class="form-group">
                             <label for="info-12">তথ্য- ১২:</label>
-                            <input name="info-12" type="text" class="form-control" id="info-12"  required>
+                            <input name="info-12" type="text" class="form-control" id="info-12" required>
                         </div>
                     </div>
                     <!-- /.card-body -->
@@ -80,7 +81,7 @@
 
         getAcademicInfo()
 
-        async function getAcademicInfo(){
+        async function getAcademicInfo() {
             let url = '/academic-data';
             const response = await axios.get(url);
             document.getElementById('info-1').value = response.data.info_1;

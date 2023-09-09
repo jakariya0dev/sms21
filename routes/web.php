@@ -14,15 +14,6 @@ use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
 
-
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-//
-//Route::get('/dashboard', function () {
-//    return view('dashboard');
-//})->middleware(['auth', 'verified'])->name('dashboard');
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -30,25 +21,27 @@ Route::middleware('auth')->group(function () {
 });
 
 
-Route::view('/', 'app');
-Route::view('/all-notice', 'pages.all-notice')->name('notice.all');
-Route::view('/dash', 'dashboard.dash');
+Route::view('/', 'app')->name('home');
+Route::get('/all-notice', [NoticeController::class, 'allNoticePage'])->name('notice.all');
 Route::view('/teacher-list', 'pages.teacher-list')->name('teacher.list');
 Route::view('/class-routine', 'pages.class-routine')->name('class.routine');
 Route::view('/all-syllabus', 'pages.syllabus')->name('syllabus.all');
 
 // get dashboard pages
-Route::view('/banner', 'dashboard.layout.banner')->name('banner');
-Route::view('/notice', 'dashboard.layout.notice')->name('notice');
-Route::view('/academic-info', 'dashboard.layout.academic-info')->name('academic-info');
-Route::view('/about', 'dashboard.layout.about')->name('about');
-Route::view('/administration', 'dashboard.layout.administration')->name('administration');
-Route::view('/news-event', 'dashboard.layout.news-event');
-Route::view('/achievement', 'dashboard.layout.achievement')->name('achievement');
-Route::view('/photo-gallery', 'dashboard.layout.photo-gallery')->name('photo-gallery');
-Route::view('/contact', 'dashboard.layout.contact')->name('contact');
-Route::view('/counter', 'dashboard.layout.counter')->name('counter');
-Route::view('/academic', 'dashboard.layout.academic')->name('academic');
+Route::middleware('auth')->group(function (){
+    Route::view('/admin-dashboard', 'dashboard.banner')->name('admin-dashboard');
+    Route::view('/banner', 'dashboard.banner')->name('banner');
+    Route::view('/notice', 'dashboard.notice')->name('notice');
+    Route::view('/academic-info', 'dashboard.academic-info')->name('academic-info');
+    Route::view('/about', 'dashboard.about')->name('about');
+    Route::view('/administration', 'dashboard.administration')->name('administration');
+    Route::view('/news-event', 'dashboard.news-event');
+    Route::view('/achievement', 'dashboard.achievement')->name('achievement');
+    Route::view('/photo-gallery', 'dashboard.photo-gallery')->name('photo-gallery');
+    Route::view('/contact', 'dashboard.contact')->name('contact');
+    Route::view('/counter', 'dashboard.counter')->name('counter');
+    Route::view('/academic', 'dashboard.academic')->name('academic');
+});
 
 // get data
 Route::get('/about-data', [SiteController::class, 'getAboutData']);

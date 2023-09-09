@@ -1,4 +1,4 @@
-@extends('dashboard.dash')
+@extends('dashboard.master')
 
 @section('content')
 
@@ -12,7 +12,8 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/achievement-update', 1) }}" method="post">
+                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/achievement-update', 1) }}"
+                      method="post">
                     @csrf
                     @method('put')
                     <div class="card-body">
@@ -45,7 +46,8 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/achievement-update', 2) }}" method="post">
+                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/achievement-update', 2) }}"
+                      method="post">
                     @csrf
                     @method('put')
                     <div class="card-body">
@@ -78,7 +80,8 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/achievement-update', 3) }}" method="post">
+                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/achievement-update', 3) }}"
+                      method="post">
                     @csrf
                     @method('put')
                     <div class="card-body">
@@ -109,7 +112,7 @@
 
         getAdministrationData()
 
-        async function getAdministrationData(){
+        async function getAdministrationData() {
 
             let url = '/achieve-data';
             const response = await axios.get(url);

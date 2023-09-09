@@ -1,4 +1,4 @@
-@extends('dashboard.dash')
+@extends('dashboard.master')
 
 @section('content')
 
@@ -12,32 +12,36 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/counter-update') }}" method="post">
+                <form enctype="multipart/form-data" id="banner-form" action="{{ url('/counter-update') }}"
+                      method="post">
 
                     @csrf
                     @method('put')
                     <div class="card-body">
                         <div class="form-group">
                             <label for="counter-student">মোট শিক্ষাথী সংখ্যা (ইংরেজিতে লিুন):</label>
-                            <input name="counter-student" type="text" class="form-control" id="counter-student" required>
+                            <input name="counter-student" type="text" class="form-control" id="counter-student"
+                                   required>
                         </div>
                         <div class="form-group">
                             <label for="counter-teacher">মোট শিক্ষক সংখ্যা (ইংরেজিতে লিুন):</label>
-                            <input name="counter-teacher" type="text" class="form-control" id="counter-teacher"  required>
+                            <input name="counter-teacher" type="text" class="form-control" id="counter-teacher"
+                                   required>
                         </div>
                         <div class="form-group">
                             <label for="counter-official">মোট কর্মচারীর সংখ্যা (ইংরেজিতে লিুন):</label>
-                            <input name="counter-official" type="text" class="form-control" id="counter-official" required>
+                            <input name="counter-official" type="text" class="form-control" id="counter-official"
+                                   required>
                         </div>
                         <div class="form-group">
                             <label for="counter-admin">পরিচালনা পর্ষদের সদস্য সংখ্যা (ইংরেজিতে লিুন):</label>
-                            <input name="counter-admin" type="text" class="form-control" id="counter-admin"  required>
+                            <input name="counter-admin" type="text" class="form-control" id="counter-admin" required>
                         </div>
-                    <!-- /.card-body -->
+                        <!-- /.card-body -->
 
-                    <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
                 </form>
             </div>
         </div>
@@ -47,7 +51,7 @@
 
         getCounterData()
 
-        async function getCounterData(){
+        async function getCounterData() {
             let url = '/counter-data';
             const response = await axios.get(url);
             document.getElementById('counter-student').value = response.data.student;
