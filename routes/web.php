@@ -7,6 +7,7 @@ use App\Http\Controllers\AdministrationController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CounterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\PhotoGalleryController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SiteController;
@@ -34,7 +35,7 @@ Route::view('/dash', 'dashboard.dash');
 
 // get dashboard pages
 Route::view('/banner', 'dashboard.layout.banner')->name('banner');
-Route::view('/notice', 'dashboard.layout.notice');
+Route::view('/notice', 'dashboard.layout.notice')->name('notice');
 Route::view('/academic-info', 'dashboard.layout.academic-info')->name('academic-info');
 Route::view('/about', 'dashboard.layout.about')->name('about');
 Route::view('/administration', 'dashboard.layout.administration')->name('administration');
@@ -65,6 +66,12 @@ Route::put('/achievement-update/{id}',  [AchievementController::class, 'updateAc
 Route::put('/contact-update',  [ContactController::class, 'updateContactData']);
 Route::put('/counter-update',  [CounterController::class, 'updateCounterData']);
 Route::put('/photo-gallery-update/{id}',  [PhotoGalleryController::class, 'updatePhotoGalleryData']);
+
+
+Route::post('/add-notice',  [NoticeController::class, 'addNotice']);
+Route::get('/delete-notice/{id}',  [NoticeController::class, 'deleteNotice']);
+
+
 
 
 require __DIR__.'/auth.php';
