@@ -236,6 +236,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a href="{{ url('/counter') }}" class="nav-link">
+                            <i class="nav-icon far fa-circle text-info"></i>
+                            <p>কাউন্টার</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a href="{{ url('/contact') }}" class="nav-link">
                             <i class="nav-icon far fa-circle text-info"></i>
                             <p>যোগাযোগ</p>

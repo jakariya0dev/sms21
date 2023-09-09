@@ -29,14 +29,14 @@
 
         const response = await axios.get(url);
 
-        document.getElementById('pg-image1').style.backgroundImage = `url({{ asset('images/gallery/${response.data.image_1}') }})`;
-        document.getElementById('pg-image2').style.backgroundImage = `url({{ asset('images/gallery/${response.data.image_2}') }})`;
-        document.getElementById('pg-image3').style.backgroundImage = `url({{ asset('images/gallery/${response.data.image_3}') }})`;
-        document.getElementById('pg-image4').style.backgroundImage = `url({{ asset('images/gallery/${response.data.image_4}') }})`;
-        document.getElementById('pg-image5').style.backgroundImage = `url({{ asset('images/gallery/${response.data.image_5}') }})`;
-        document.getElementById('pg-image6').style.backgroundImage = `url({{ asset('images/gallery/${response.data.image_6}') }})`;
-        document.getElementById('pg-image7').style.backgroundImage = `url({{ asset('images/gallery/${response.data.image_7}') }})`;
-        document.getElementById('pg-image8').style.backgroundImage = `url({{ asset('images/gallery/${response.data.image_8}') }})`;
+        document.getElementById('pg-image1').style.backgroundImage = `url({{ asset('images/gallery/photo-1/${response.data.image_1}') }})`;
+        document.getElementById('pg-image2').style.backgroundImage = `url({{ asset('images/gallery/photo-2/${response.data.image_2}') }})`;
+        document.getElementById('pg-image3').style.backgroundImage = `url({{ asset('images/gallery/photo-3/${response.data.image_3}') }})`;
+        document.getElementById('pg-image4').style.backgroundImage = `url({{ asset('images/gallery/photo-4/${response.data.image_4}') }})`;
+        document.getElementById('pg-image5').style.backgroundImage = `url({{ asset('images/gallery/photo-5/${response.data.image_5}') }})`;
+        document.getElementById('pg-image6').style.backgroundImage = `url({{ asset('images/gallery/photo-6/${response.data.image_6}') }})`;
+        document.getElementById('pg-image7').style.backgroundImage = `url({{ asset('images/gallery/photo-7/${response.data.image_7}') }})`;
+        document.getElementById('pg-image8').style.backgroundImage = `url({{ asset('images/gallery/photo-8/${response.data.image_8}') }})`;
 
     }
 </script>

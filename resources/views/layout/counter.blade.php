@@ -5,23 +5,23 @@
             <div class="row counters">
 
                 <div class="col-lg-3 col-6 text-center">
-                    <span id="counter-value1" class="purecounter"></span>
-                    <p id="counter-caption1">আজকের ভিজিটর</p>
+                    <span id="counter-total-student"></span>
+                    <p id="counter-caption1">শিক্ষার্থী সংখ্যা</p>
                 </div>
 
                 <div class="col-lg-3 col-6 text-center">
-                    <span id="counter-value2" class="purecounter"></span>
-                    <p id="counter-caption2">এই মাসের ভিজিটর</p>
+                    <span id="counter-total-teacher"></span>
+                    <p id="counter-caption2">শিক্ষক সংখ্যা</p>
                 </div>
 
                 <div class="col-lg-3 col-6 text-center">
-                    <span id="counter-value3" class="purecounter"></span>
-                    <p id="counter-caption3">এই বছরের ভিজিটর</p>
+                    <span id="counter-total-official"></span>
+                    <p id="counter-caption3">মোট কর্মচারী</p>
                 </div>
 
                 <div class="col-lg-3 col-6 text-center">
-                    <span id="counter-value4" class="purecounter"></span>
-                    <p id="counter-caption4">মোট ভিজিটর</p>
+                    <span id="counter-total-admin"></span>
+                    <p id="counter-admin">পরিচালনা পর্ষদ</p>
                 </div>
 
             </div>
@@ -39,18 +39,12 @@
 
         const response = await axios.get(url);
 
-        document.getElementById('counter-caption1').innerText = response.data.caption1;
-        document.getElementById('counter-caption2').innerText = response.data.caption2;
-        document.getElementById('counter-caption3').innerText = response.data.caption3;
-        document.getElementById('counter-caption4').innerText = response.data.caption4;
-
-        document.getElementById('counter-value1').innerText = response.data.value1;
-        document.getElementById('counter-value1').innerText = response.data.value1;
-        document.getElementById('counter-value1').innerText = response.data.value1;
-        document.getElementById('counter-value1').innerText = response.data.value1;
+        document.getElementById('counter-total-student').innerText = response.data.student;
+        document.getElementById('counter-total-teacher').innerText = response.data.teacher;
+        document.getElementById('counter-total-official').innerText = response.data.official;
+        document.getElementById('counter-total-admin').innerText = response.data.admin;
 
         // console.log(response.data)
-
 
     }
 </script>

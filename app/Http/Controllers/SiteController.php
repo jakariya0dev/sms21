@@ -48,4 +48,9 @@ class SiteController extends Controller
         return DB::table('news_event')->get();
     }
 
+    function getVisitorData(Request $request){
+
+        return $request->visitor();
+    }
+
 }

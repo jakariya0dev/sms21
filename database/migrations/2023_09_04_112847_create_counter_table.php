@@ -13,14 +13,10 @@ return new class extends Migration
     {
         Schema::create('counter', function (Blueprint $table) {
             $table->id();
-            $table->string('caption1');
-            $table->string('value1');
-            $table->string('caption2');
-            $table->string('value2');
-            $table->string('caption3');
-            $table->string('value3');
-            $table->string('caption4');
-            $table->string('value4');
+            $table->string('student');
+            $table->string('teacher');
+            $table->string('official');
+            $table->string('admin');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate() ;
         });
