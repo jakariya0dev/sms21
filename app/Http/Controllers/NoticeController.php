@@ -29,11 +29,24 @@ class NoticeController extends Controller
 
             DB::table('notice')->insert([
                 'title' => $request->input('notice-title'),
-                'description' => $request->input('notice-description'),
                 'file' => $fileName,
             ]);
         }
+        else{
+            DB::table('notice')->insert([
+                'title' => $request->input('notice-title'),
+            ]);
+        }
+
 
         return redirect()->route('notice');
+    }
+
+    function downloadNotice(Request $request){
+
+        $file_name = DB::table('notice')->where('id', $request->id)->value('file');
+        $file_path = public_path('files/notice/'.$file_name);
+
+        return response()->file($file_path);
     }
 }

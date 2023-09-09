@@ -7,7 +7,7 @@
         <div class="container">
             <div class="card card-primary">
                 <div class="card-header">
-                    <h3 class="card-title">নতুন নোটি</h3>
+                    <h3 class="card-title">নতুন নোটিশ</h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
@@ -19,10 +19,6 @@
                         <div class="form-group">
                             <label for="notice-title">হেডলাইনঃ</label>
                             <input name="notice-title" type="text" class="form-control" id="notice-title" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="notice-description">বর্ণনাঃ</label>
-                            <input name="notice-description" type="text" class="form-control" id="notice-description" required>
                         </div>
                         <div class="form-group">
                             <label for="notice-pdf">পিডিএফ ফাইল</label>
